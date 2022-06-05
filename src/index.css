@@ -7,7 +7,7 @@
   --bg-button:black;
   --button-color:white;
 
-}
+};
 [data-theme='dark']{
   --bg-color:#ffff;
   --form-bg:black;
@@ -15,8 +15,7 @@
   --border: #808080;
   --bg-button:white;
   --button-color:black;
-}
-
+};
 *{
   margin: 0;
   padding: 0;
@@ -27,7 +26,6 @@ body{
 }
 
 .app-container{
-
  color: var(--text-color);
  display: flex;
  justify-content: center;
