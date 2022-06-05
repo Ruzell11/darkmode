@@ -59,6 +59,11 @@ i{
 .toggle{
   text-align: center;
 }
+.toggle p {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+}
 .form-container{
   background-color: var(--form-bg);
   display: flex;
@@ -146,7 +151,3 @@ justify-content: space-between;
   }
 }
   
-.Icon{
-  width: 40px;
-  cursor: pointer;
-}

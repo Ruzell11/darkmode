@@ -1,24 +1,34 @@
 import React from 'react';
-import useLocalStorae from 'use-local-storage'
+import useLocalStorage from 'use-local-storage'
 import { useState } from 'react';
 
 
 
-function Form(){
+function Form(props){
 
-    const [theme , setTheme] = useLocalStorae('theme' ? "dark" : "light")
-    const[isShown , setIsShown] = React.useState(false)
-
+    const [theme , setTheme] = useLocalStorage('theme' ? "dark" : "light")
+    const[isShown , setIsShown] = useState(false)
+    const [toggle , setToggle] = useState({
+        isToggle :true
+    })
+    const toggleIcon = props.isToggle ? <i class='fas fa-toggle-on'></i> : <i class='fas fa-toggle-off'></i>
+  
 
     const switchTheme = () => {
+       
+      
         const newTheme = theme === 'light' ? 'dark' : 'light'
         setTheme(newTheme)
         setIsShown(prevShown => !prevShown)
+        setToggle(prevToggle =>{
+            return {
+                isToggle : !prevToggle.isToggle
+            }
+        })
        
     }
 
-  
-  
+   
     
 
 
@@ -56,8 +66,8 @@ function Form(){
                                    <a href='#' >  <p className='create'>Create a Account</p></a>
                                 </div>
                                 <div className='toggle'>
-                                 <button onClick={switchTheme}>{isShown ? "Dark Mode" : "Light Mode"}</button>
-                                  
+                                <p>{isShown ? "Turn On darkmode" : "Turn off darkmode"}</p>
+                                <i onClick={switchTheme}>{isShown ? <i class='fas fa-toggle-off'></i> : <i class='fas fa-toggle-on'></i>}</i>
                                     
                                    
                                 </div>
