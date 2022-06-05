@@ -1,13 +1,13 @@
 :root{
   --bg-color:#ffff;
-  --text-color:whitesmoke
+  --text-color:whitesmoke;
   --font-family: 'Kdam Thmor Pro', sans-serif;
   --border: black;
   --form-bg:#f5f5dc;
   --bg-button:black;
   --button-color:white;
 
-};
+}
 [data-theme='dark']{
   --bg-color:#ffff;
   --form-bg:black;
@@ -15,7 +15,7 @@
   --border: #808080;
   --bg-button:white;
   --button-color:black;
-};
+}
 *{
   margin: 0;
   padding: 0;
