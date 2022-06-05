@@ -1,0 +1,153 @@
+:root{
+  --bg-color:#ffff;
+  --text-color:whitesmoke
+  --font-family: 'Kdam Thmor Pro', sans-serif;
+  --border: black;
+  --form-bg:#f5f5dc;
+  --bg-button:black;
+  --button-color:white;
+
+}
+[data-theme='dark']{
+  --bg-color:#ffff;
+  --form-bg:black;
+  --text-color:beige;
+  --border: #808080;
+  --bg-button:white;
+  --button-color:black;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+  background-color:gray ;
+}
+
+.app-container{
+
+ color: var(--text-color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ flex-direction: column;
+ transition:  all .5s;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+
+
+}
+
+.header h1{
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+h4 {
+  text-align: center;
+  font-size: 30px;
+}
+i{
+  font-size: 30px;
+  cursor: pointer;
+}
+.toggle{
+  text-align: center;
+}
+.form-container{
+  background-color: var(--form-bg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: 0px 0px 12px var(--border) ;
+  border-radius: 8px;
+  padding: 10px;
+
+ 
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.top i{
+  font-size: 20px;
+}
+
+.divider{
+  width: 100%;
+  text-align: center;
+  border-bottom:  1px solid var(--border);
+  line-height: .1rem;
+  margin: 1rem 0;
+}
+
+.divider span{
+  padding: 0 10px;
+  background-color: var(--form-bg);
+ 
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+label{
+  margin: 5px;
+  font-weight: 800;
+
+}
+
+input{
+  border-radius: 6px;
+  padding: 10px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--bg-button);
+  color: var( --button-color);
+  cursor: pointer;
+}
+
+.remember{
+  padding: 10px;
+}
+
+.bottom{
+  display: flex;
+justify-content: space-between;
+  padding: 10px;
+}
+.bottom a{
+  text-decoration: none;
+  color: var( --text-color);
+  font-size: 15px;
+  padding: 4px;
+  font-weight: bold;
+}
+
+@media screen  and (max-width: 478px){
+  form{
+    width: 90%;
+  }
+}
+  
+.Icon{
+  width: 40px;
+  cursor: pointer;
+}

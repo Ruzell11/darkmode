@@ -1,0 +1,14 @@
+import React from 'react';
+
+
+
+  function toggleIcon(props){
+        const toggleIcon = props.isFavorites ? "https://cdn1.iconfinder.com/data/icons/user-interface-11/100/11-512.png":
+        "https://cdn1.iconfinder.com/data/icons/user-interface-11/100/10-512.png"
+        
+       
+    }
+
+
+
+export default toggleIcon;
