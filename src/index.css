@@ -1,6 +1,6 @@
 :root{
   --bg-color:#ffff;
-  --text-color:whitesmoke;
+  --text-color:whitesmoke
   --font-family: 'Kdam Thmor Pro', sans-serif;
   --border: black;
   --form-bg:#f5f5dc;
@@ -16,16 +16,18 @@
   --bg-button:white;
   --button-color:black;
 }
+
 *{
   margin: 0;
   padding: 0;
 }
 body{
   box-sizing: border-box;
-  background-color:gray ;
+  background-color: gray ;
 }
 
 .app-container{
+
  color: var(--text-color);
  display: flex;
  justify-content: center;
