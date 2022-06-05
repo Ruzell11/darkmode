@@ -66,7 +66,7 @@ function Form(props){
                                    <a href='#' >  <p className='create'>Create a Account</p></a>
                                 </div>
                                 <div className='toggle'>
-                                <p>{isShown ? "Turn On darkmode" : "Turn off darkmode"}</p>
+                                <p>{isShown ? "Turn off darkmode" : "Turn on darkmode"}</p>
                                 <i onClick={switchTheme}>{isShown ? <i class='fas fa-toggle-off'></i> : <i class='fas fa-toggle-on'></i>}</i>
                                     
                                    
